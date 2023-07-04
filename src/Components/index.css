@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Mulish&family=Noto+Serif:wght@700&family=Open+Sans:wght@300;600&family=Raleway:wght@200;600&display=swap");
+
+body {
+  background-color: #4a286a;
+  letter-spacing: 1px;
+}
+.main_div {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.child_div {
+  margin: 20px auto;
+  text-align: center;
+}
+/* #F9A826 */
+img {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+figcaption {
+  color: #fff;
+  font-size: 19px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+
+.addItems {
+  margin: 0px 25px;
+  border: 1px solid #fff;
+  padding: 4px;
+  margin-bottom: 15px;
+}
+
+.addItems input {
+  border: none;
+  outline: none;
+  background-color: #4a286a;
+  color: #fff;
+  margin-right: 6px;
+}
+
+.add {
+  color: greenyellow;
+}
+.add:hover {
+  cursor: pointer;
+}
+
+::placeholder {
+  padding: 0px 5px;
+  color: gray;
+  letter-spacing: 2px;
+}
+
+.update-btn {
+  color: greenyellow;
+  cursor: pointer;
+}
+
+
+.showItems {
+  margin-bottom: 25px;
+}
+
+.eachItem {
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px;
+  color: #fff;
+  margin: 0px 20px 20px;
+}
+
+span {
+  text-align: start;
+  width: 80%;
+  padding: 3px;
+  word-wrap: break-word;
+}
+
+.todo_btn {
+  position: absolute;
+  right: 35px;
+
+  display: flex;
+}
+
+.todo_btn .edit {
+  color: lightgray;
+}
+.todo_btn:hover {
+  color: gray;
+  cursor: pointer;
+}
+.todo_btn .delete {
+  color: #ff5151;
+  margin-right: 8px;
+}
+
+.todo_btn .delete:hover {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clearLists {
+  background-color: #4a286a;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 12px;
+  letter-spacing: 1.5px;
+}
+
+.clearLists:hover {
+  color: #ff5151;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .main_div {
+    width: 100%;
+    font-size: 1.2rem;
+   
+  }
+  .child_div {
+    width: 500px;
+    margin: 50px auto 0px auto;
+  }
+  input {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .addItems input {
+    width: 85%;
+    margin-right: 20px;
+  }
+  .todo_btn {
+    position: static;
+    font-size: 20px;
+  }
+
+  .eachItem {
+    width: 400px;
+    margin: 0px auto 20px auto;
+  }
+  span {
+    width: 85%;
+    margin-right: 25px;
+    line-height: 20px;
+  }
+  .delete {
+    margin-left: 20px;
+  }
+
+  .clearLists {
+    margin-top: 20px;
+  }
+
+  .showItems {
+    margin: auto;
+  }
+}
